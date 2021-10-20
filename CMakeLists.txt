@@ -3,4 +3,4 @@ project(Programmation_Dynamique C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Programmation_Dynamique main.c)
+add_executable(Programmation_Dynamique main.c src/function.c header/function.h)
