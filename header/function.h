@@ -14,8 +14,7 @@ typedef struct {
 
 #endif //PROGRAMMATION_DYNAMIQUE_FUNCTION_H
 
-
 int *getArray(int size);
 int find_by_dichotomy(int array[], int size_t, int value);
-void triSack(Sack unTableau[], int uneTaille);
-int find_by_knapsack(Sack *s);
+void triSack(Sack array[], int size);
+float find_by_knapsack(Sack array[], int size, float weight);
