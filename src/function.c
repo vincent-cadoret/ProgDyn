@@ -32,7 +32,23 @@ int find_by_dichotomy(int array[], int size_t, int value){
     }
     return result;
 }
-int find_by_knapsack(int array[], int size_t, int value){
+
+void triSack(Sack unTableau[], int uneTaille){
+    float wtmp, vtmp;
+    for(int i = 0;i < uneTaille - 1; i++){
+        for(int j = i + 1 ;j < uneTaille;j++) {
+            if (unTableau[i].value/unTableau[i].weight > unTableau[j].value/unTableau[j].weight) {
+                wtmp = unTableau[i].weight;
+                vtmp = unTableau[i].value;
+                unTableau[i] = unTableau[j];
+                unTableau[j].value = vtmp;
+                unTableau[j].weight= wtmp;
+            }
+        }
+    }
+}
+
+int find_by_knapsack(Sack *s){
 
     return 0;
 }
