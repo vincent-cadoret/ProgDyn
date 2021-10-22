@@ -1,11 +1,12 @@
-//
-// Created by v.cadoret on 20/10/2021.
-//
-
-#include <stdio.h>
 #include <malloc.h>
 #include "../header/function.h"
 
+/**
+ * @author Vincent Cadoret
+ * @brief Génère un tableau avec une taille passé en paramètre.
+ * @param size
+ * @return tab
+ */
 int *getArray(int size) {
     int *tab = (int*) malloc(sizeof(int) * size);
     for (int i = 0; i < size; i++) {
@@ -14,6 +15,12 @@ int *getArray(int size) {
     return tab;
 }
 
+/**
+ * @author Vincent Cadoret
+ * @brief Trouve la position d'un nombre inclue dans un tableau via la méthode de la dychotomie.
+ * @param size
+ * @return tab
+ */
 int find_by_dichotomy(int array[], int size_t, int value) {
     int min = 1, max = size_t, i, result = -1;
     while (min <= max) {
@@ -32,6 +39,13 @@ int find_by_dichotomy(int array[], int size_t, int value) {
     return result;
 }
 
+/**
+ * @author Vincent Cadoret
+ * @brief Tri un tableau passé en paramètre selon la méthode du sac à dos.
+ * @param array
+ * @param size
+ * @return array
+ */
 void triSack(Sack array[], int size) {
     Sack temp;
 
@@ -47,6 +61,14 @@ void triSack(Sack array[], int size) {
     }
 }
 
+/**
+ * @author Vincent Cadoret
+ * @brief Rempli le sac à dos via un tableau passé en paramètre. Retourne un float du poids du sac.
+ * @param array
+ * @param size
+ * @param weightMax
+ * @return total
+ */
 float find_by_knapsack(Sack array[], int size, float weightMax){
     float total = 0;
     for (int i = 0; i < size; ++i) {

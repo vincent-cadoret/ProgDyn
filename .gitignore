@@ -1,9 +1,3 @@
 # Project exclude paths
 /cmake-build-debug/
-/CMakeFiles/
-CMakeLists.txt
-CMakeCache.txt
-cmake_install.cmake
 /Testing/
-ProgDyn
-ProgDyn.cbp
