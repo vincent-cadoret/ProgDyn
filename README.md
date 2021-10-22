@@ -14,7 +14,7 @@ sudo apt install cmake
 ```
 Ensuite build le CMake dans le répertoire du projet : 
 ```
-sudo cmake ~/CLionProjects/ProgDyn
+cmake ~/CLionProjects/ProgDyn
 ```
 Une fois le MakeFile généré, on execute la commande dans le dossier du projet :
 ```
