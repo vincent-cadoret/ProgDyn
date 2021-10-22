@@ -35,3 +35,8 @@ On peut maintenant lancer le projet !
 ``
 ./ProgDyn
 ``
+Si on souhaite supprimer l'executable :
+
+``
+sudo make clean
+``
