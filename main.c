@@ -3,9 +3,11 @@
 #include "header/test.h"
 
 int main(void) {
-    printf("Debut du TP4 : Programmation Dynamique by Vincent Cadoret\n");
+    printf("Debut ProgDyn Vincent Cadoret\n");
+
     testDychotomy();
     testKnapsack();
-    printf("\nFin du TP4 : Programmation Dynamique by Vincent Cadoret");
+
+    printf("\nFin ProgDyn Vincent Cadoret");
     return EXIT_SUCCESS;
 }

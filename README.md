@@ -24,11 +24,7 @@ cd ProgDyn
 cmake .
 ``
 
-``
-doxygen -g
-``
-
-Une fois le MakeFile et le Doxyfile généré, on execute la commande dans le dossier du projet :
+Une fois le MakeFile généré, on execute la commande dans le dossier du projet :
 
 ``
 sudo make
