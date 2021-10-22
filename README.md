@@ -8,19 +8,34 @@ Le programme ProgDyn propose 3 fonctions;
 ## Auteur
 
 ## Comment installer et lancer le projet :
-Tout d'abord, il faut installer cmake : 
-```
-sudo apt install cmake
-```
-Ensuite build le CMake dans le répertoire du projet : 
-```
-cmake ~/CLionProjects/ProgDyn
-```
-Une fois le MakeFile généré, on execute la commande dans le dossier du projet :
-```
+Tout d'abord, il faut installer cmake et doxygen: 
+
+``
+sudo apt install cmake doxygen
+``
+
+Ensuite build le CMake dans le répertoire du projet :
+
+``
+cd ProgDyn
+``
+
+``
+cmake .
+``
+
+``
+doxygen -g
+``
+
+Une fois le MakeFile et le Doxyfile généré, on execute la commande dans le dossier du projet :
+
+``
 sudo make
-```
+``
+
 On peut maintenant lancer le projet ! 
-```
+
+``
 ./ProgDyn
-```
+``
