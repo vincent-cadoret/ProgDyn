@@ -5,11 +5,13 @@
 #include "../header/pgcb.h"
 
 int *getMatrix(const int row, const int column){
-    int *matrix = malloc(row * column);
+    int size = row * column;
+    int *matrix = malloc(size * sizeof(int));
     srand(time(NULL));
 
-    for(int i = 0 ; i < row * column; i++) {
+    for(int i = 0 ; i <  size - 1; i++) {
         matrix[i] = rand() % 2;
+        // printf("%d", matrix[i]);
     }
     return matrix;
 }
