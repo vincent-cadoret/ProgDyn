@@ -1,4 +1,4 @@
-# ProgDyn
+# ProgDyn - Vincent Cadoret
 
 ## Démarrage :
 Pour ce TP vous allez devoir récupérer le projet « ProgDyn » via GitHub. Ce projet contient les déclarations de différentes fonctions permettant de tester la dychotomie, le sac à dos et le PGCB.
@@ -17,7 +17,7 @@ Le programme ProgDyn propose 3 fonctions;
 Tout d'abord, il faut installer cmake et doxygen: 
 
 ``
-sudo apt install cmake doxygen
+sudo apt install cmake doxygen -y
 ``
 
 Ensuite build le CMake dans le répertoire du projet :
@@ -41,16 +41,16 @@ On peut maintenant lancer le projet !
 ``
 ./ProgDyn
 ``
+
 Si on souhaite supprimer l'executable :
 
 ``
 sudo make clean
 ``
 
-## Auteur :
-- Vincent Cadoret alias @vincent-cadoret
-
+## Auteurs
+* **Vincent Cadoret** _alias_ [@vincent-cadoret](https://github.com/vincent-cadoret)
 ## Sources : 
-- https://fr.wikipedia.org/wiki/Dichotomie
-- https://fr.wikipedia.org/wiki/Probl%C3%A8me_du_sac_%C3%A0_dos
-- http://www-desir.lip6.fr/~spanjaard/pmwiki/uploads/ProgrammationDynamique.pdf
+- [Dichotomie](https://fr.wikipedia.org/wiki/Dichotomie) - Wikipedia
+- [Sac à dos](https://fr.wikipedia.org/wiki/Probl%C3%A8me_du_sac_%C3%A0_dos) - Wikipedia
+- [PGCB](http://www-desir.lip6.fr/~spanjaard/pmwiki/uploads/ProgrammationDynamique.pdf) - desir.lip6.fr
