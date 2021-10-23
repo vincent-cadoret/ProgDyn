@@ -9,6 +9,6 @@ int main(void) {
     testKnapsack();
     testPGCB();
 
-    printf("\nFin ProgDyn Vincent Cadoret");
+    printf("\nFin ProgDyn Vincent Cadoret\n");
     return EXIT_SUCCESS;
 }
