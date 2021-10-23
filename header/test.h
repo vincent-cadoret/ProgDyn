@@ -1,8 +1,3 @@
-#ifdef __linux__
-#include "CUnit/CUnit.h"
-#include "CUnit/Basic.h"
-#endif
-
 #ifndef PROGRAMMATION_DYNAMIQUE_FUNCTION_H
 #define PROGRAMMATION_DYNAMIQUE_FUNCTION_H
 
