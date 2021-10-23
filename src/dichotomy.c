@@ -1,4 +1,19 @@
+#include <malloc.h>
 #include "../header/dichotomy.h"
+
+/**
+ * @author Vincent Cadoret
+ * @brief Génère un tableau avec une taille passé en paramètre.
+ * @param size
+ * @return tab
+ */
+int *getArray(int size) {
+    int *tab = (int*) malloc(sizeof(int) * size);
+    for (int i = 0; i < size; i++) {
+        tab[i] = i;
+    }
+    return tab;
+}
 
 /**
  * @author Vincent Cadoret

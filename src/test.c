@@ -1,23 +1,20 @@
-#include <malloc.h>
 #include <stdio.h>
 #include "../header/test.h"
 #include "../header/dichotomy.h"
 #include "../header/knapsack.h"
+#include "../header/pgcb.h"
 
 /**
  * @author Vincent Cadoret
- * @brief Génère un tableau avec une taille passé en paramètre.
- * @param size
- * @return tab
+ * @brief Définition de la taille de la matrice :
  */
-int *getArray(int size) {
-    int *tab = (int*) malloc(sizeof(int) * size);
-    for (int i = 0; i < size; i++) {
-        tab[i] = i;
-    }
-    return tab;
-}
+#define ROW 10
+#define COLUMN 10
 
+/**
+ * @author Vincent Cadoret
+ * @brief Fonction de test de la Dychotomie, on prend un tableau de 'getArray' puis on l'envoi à la fonction 'find_by_dichotomy' qui nous renvoie la valeur trouvé dans le tableau.
+ */
 void testDychotomy(void){
     printf("Exercice 1 : ");
 
@@ -25,6 +22,11 @@ void testDychotomy(void){
     int result = find_by_dichotomy(array, ARRAY_MAX_SIZE, ARRAY_VALUE_RESEARCHED);
     printf("%d", result);
 }
+
+/**
+ * @author Vincent Cadoret
+ * @brief Fonction de test de la méthode dite du Sac à dos, on prend un tableau Sack qu'on envoi à la fonction 'triSack' puis 'find_by_knapsack' qui nous renvoie le poids du sac à dos avec la méthode par gloutonnage.
+ */
 void testKnapsack(void){
     printf("\nExercice 2 : ");
 
@@ -41,4 +43,13 @@ void testKnapsack(void){
 
     float res = find_by_knapsack(sackArray, 3, 10);
     printf("%f", res);
+}
+
+/**
+ * @author Vincent Cadoret
+ * @brief Fonction de test pour trouver le plus grand carré blanc (PGCB) dans une matrice de '1' et de '0' généré aléatoirement.
+ */
+void testPGCB(void){
+    printf("\nExercice 3 : \n");
+    seeMatrix(getMatrix(ROW, COLUMN), ROW, COLUMN);
 }
